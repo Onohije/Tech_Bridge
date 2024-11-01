@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="first_div">
+        <div>
+        <h2>Create a new account</h2>
+        <br>
+        <h3>It's a quick and easy.</h3>
+        <hr>
+    </div>
+    <br>
+    <form action="submit_form" method="POST"  class="form-div">
+
+        <!-- Name -->
+        <div>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" id="first-name">
+        
+        <input type="text" id="last-name" name="last-name" placeholder="Surname">
+        </div>
+        <br>
+
+        <div>
+            <p>Date of birth <span>?</span></p>
+            <input type="number" name="number" placeholder="17" id="number">
+            
+            <select name="Month" id="month">
+                <option value="">May</option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Jun">June</option> 
+                <option value="Jul">July</option>
+                <option value="Aug">August</option>
+                <option value="Sep">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+
+            <input type="number" name="year" placeholder="2024" id="year" min="1900" max="2024" required>
+        </div>
+        <br>
+
+        <div>
+        <!-- Gender -->
+        <p>Gender <span>&#63;</span></p>
+        <button>Female<input type="radio" name="gender" value="female" required></button>
+        <button>Male<input type="radio" name="gender" value="male"></button>
+        <button>Custom<input type="radio" name="gender" value="custom"></button>
+        </div>
+        <br>
+
+        <div>
+        <!-- Mobile number or email -->
+        <input type="text" id="contact" name="contact" placeholder="Mobile number or Email address">
+        </div>
+        <br>
+
+        <!-- Password -->
+        <div>
+        <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+
+        <br>
+        <p>People who use our service may have uploaded your contact <br> information to facebook. <a href="">Learn More.</a></p>
+
+        <br>
+        <p>By clicking Sign Up, you agree to our <a href="">Terms,  Privacy Policy</a> and <a href="">Policy.</a> <br> You may receive SMS notifications from us and can opt out at anytime.</p>
+
+        <br>
+        <div>
+        <!-- Sign Up Button -->
+        <button type="submit">Sign Up</button>
+        </div>
+    </form>
+
+    <p>Already have an account? <a href="#">Log in</a></p>
+
+</div>
+
+</body>
+</html>
