@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+            function num(num1, num2){
+                for(i = 1; i <= num2; i++){
+                    console.log(`${num1} x ${i} = ${num1 * i}`);
+                }
+            }
+
+            num(2, 10);
+            
+
+
+            const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m",
+                  "n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    function reverse(alpha) {
+        let rIndex = 25 - alphabet.indexOf(alpha);  // Get the reverse index
+        return alphabet[rIndex];
+    }
+
+    function reverseWord(word) {
+        let wordOutput = "";  // Initialize an empty string to store the result
+        for (const element of word) {
+            if (alphabet.includes(element)) {
+                wordOutput += reverse(element);  // Reverse alphabet letters
+            } else {
+                wordOutput += element;  // Keep non-alphabet characters as they are
+            }
+        }
+        return wordOutput;  // Return the reversed word
+    }
+/
+    // Example usage:
+    console.log(reverseWord("abc"));  // Output: "zyx"
+    console.log(reverseWord("hello"));  // Output: "svool"
+
+
+    ivs.forEach(element => {
+    if (element.className === "red") {
+        let newElement = document.createElement("p");
+        newElement.textContent = "hello Valentine";
+        element.appendChild(newElement);
+    } else {
+        let newElement = document.createElement("h4");
+        newElement.textContent = "this is Valentine's Day";
+         newElement.src = "image link";
+        element.appendChild(newElement);
+    }
+});
+    </script>
+   
+     
+</body>          
+</html>

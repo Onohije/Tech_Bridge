@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="decoder-container">
+        <h1>Message Decoder</h1>
+        <textarea id="encodedMessage" placeholder="Enter your encoded message here..."></textarea>
+        <button onclick="decodeMessage()">Decode</button>
+        <div class="result" id="decodedResult"></div>
+    </div>
+
+    <script>
+        function decodeMessage() {
+            const encodedMessage = document.getElementById('encodedMessage').value;
+            const shift = 1; 
+            let decodedMessage = '';
+
+            
+            for (let char of encodedMessage) {
+                if (/[a-zA-Z]/.test(char)) {
+                    const base = char === char.toUpperCase() ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
+                    decodedMessage += String.fromCharCode(((char.charCodeAt(0) - base - shift + 26) % 26) + base);
+                } else {
+                    decodedMessage += char;
+                }
+            }
+
+            
+            document.getElementById('decodedResult').textContent = `Decoded Message: ${decodedMessage}`;
+        }
+    </script>
+</body>
+</body>
+</html>
