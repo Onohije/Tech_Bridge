@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.reviews {
+  padding: 40px 50px;
+  border-radius: 12px;
+  margin: auto 50px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.reviews-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.customer {
+    position: relative;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.customers-image-container {
+  width: 326px;
+  height: 345px;
+}
+
+.reviews-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.reviews-description {
+  font-size: 18px;
+  line-height: 36px;
+  color: #3f403f;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer-name {
+  font-size: 21px;
+  font-weight: 600;
+  color: #3f403f;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.customer-position {
+  font-size: 16px;
+  color: #9b9b9b;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.customer-image {
+  left: -12px;
+  top: -12px;
+}
+
+.button-container {
+    position: absolute;
+    right: 0;
+    top: -40px
+}

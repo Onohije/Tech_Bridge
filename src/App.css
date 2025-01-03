@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #3f403f;
+}
+
+.app {
+  position: relative;
+  overflow-x: hidden;
+  /* padding: 0 50px; */
+}
+
+.rectangle-img {
+  position: absolute;
+  z-index: 0;
+}

@@ -1,0 +1,77 @@
+.logo-img {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    /* z-index: -100; */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #06942a;
+  }
+  
+  .auth {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth .login-btn {
+    background-color: #06942a33;
+    color: #06942a;
+  }
+  
+  .auth .login-btn:hover {
+    background-color: #06942a;
+    color: #fff;
+  }
+  
+  .auth button:hover {
+    background-color: #f0f0f0;
+    color: #3f403f;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .menu {
+      margin-top: 15px;
+      gap: 15px;
+    }
+  
+    .auth {
+      margin-top: 15px;
+      gap: 10px;
+    }
+  }

@@ -1,0 +1,133 @@
+/* AboutUs.css */
+.about-us {
+    padding: 40px 60px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-us__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .cards__column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .role {
+    font-family: "Graphik", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    margin: 15px 0;
+  }
+  
+  .role span {
+    color: #28a745;
+  }
+  
+  .about-us__text {
+    max-width: 400px;
+    flex: 1;
+  }
+  
+  .single-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us__text {
+    max-width: 500px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .about-us__text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.22px;
+  }
+  
+  .about-us__text p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .about-us__text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-us__text li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  
+  .about-us__text li p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .about-us__text li p strong {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.48px;
+  }
+  
+  .about-us__text .icon {
+    color: #28a745;
+    background-color: #f2f9f4;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
